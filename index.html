@@ -65,6 +65,7 @@
     header{position:sticky;top:0;z-index:60;background:rgba(247,247,249,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
       border-bottom:1px solid transparent;transition:border-color .3s}
     header.tight{border-bottom-color:var(--line)}
+    header.checkout-stick-visible .nav-cta{visibility:hidden;opacity:0;pointer-events:none}
     .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
     .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;letter-spacing:-.02em}
     .logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(160deg,var(--brand),var(--brand2));color:#fff;display:grid;place-items:center;font-style:normal;font-weight:800;font-size:15px;box-shadow:0 6px 14px -6px rgba(10,102,194,.6)}
@@ -491,7 +492,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <span><strong>Veja tudo por dentro primeiro.</strong> Se não valer, você pede o dinheiro de volta em 1 clique, em até 7 dias. Sem perguntas.</span>
             </div>
-            <div class="pay"><div class="pay-row pay-best"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div><b>Cartão<span class="pay-tag">no checkout</span></b><span>No checkout seguro da Cakto, você preenche seus dados e confirma o pagamento. O tempo depende do método escolhido.</span></div></div><div class="pay-row pay-alt"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 10-10 10L2 12z"/></svg></div><div><b>Pix</b><span>Gera um código, você abre o app do banco, cola, confirma e volta. Funciona igual — só tem esse ida e volta.</span></div></div><div class="pay-foot">Antes disso você informa nome, e-mail, celular e CPF. Nos dois casos o acesso cai no seu e-mail na hora.</div></div>
+            <div class="pay"><div class="pay-row pay-best"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div><b>Cartão<span class="pay-tag">no checkout</span></b><span>No checkout seguro da Cakto, você preenche seus dados e confirma o pagamento. O tempo depende do método escolhido.</span></div></div><div class="pay-row pay-alt"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 10-10 10L2 12z"/></svg></div><div><b>Pix</b><span>Gera um código, você abre o app do banco, cola, confirma e volta. Funciona igual — só tem esse ida e volta.</span></div></div><div class="pay-foot">Antes disso você informa nome, e-mail, celular e CPF. Após a confirmação do pagamento, o acesso é enviado ao seu e-mail.</div></div>
           </div>
         </div>
 
@@ -502,21 +503,21 @@
               <div class="scr" id="demo">
                 <div class="sc on" data-s="0">
                   <h5>Hoje</h5>
-                  <div class="m-hero"><span class="k">Semana 1 · Dia 1</span><b>Cadastro e Primeiro Link de Afiliado no Ar</b>
-                    <p>Hoje você não vai estudar mercado nem escolher logotipo. Você sai com o seu primeiro link rastreável gerado.</p>
+                  <div class="m-hero"><span class="k">Semana 1 · Dia 1</span><b>Solicitação no Programa de Afiliados</b>
+                    <p>Hoje você vai seguir o passo a passo para solicitar participação no programa de afiliados. A geração do link depende da aprovação da plataforma.</p>
                     <div class="m-btn" id="dbtn">Começar o Dia 1 →</div><div class="m-prog"><i id="dprog"></i></div></div>
                   <div class="m-stats" id="dstats"><div><b>0/21</b><span>dias fechados</span></div><div><b>0%</b><span>do plano</span></div><div><b>1</b><span>dia com você</span></div></div>
                   <div class="m-sec">Depois vem</div>
-                  <div class="m-list"><div class="m-step"><i>2</i><span>Abertura da Vitrine Silenciosa<br><small style="color:#86868F">40 minutos · 4 passos</small></span></div><div class="m-step"><i>3</i><span>Cadastro no Mercado Livre Afiliados</span></div></div>
+                  <div class="m-list"><div class="m-step"><i>2</i><span>Abertura da Vitrine de Ofertas<br><small style="color:#86868F">40 minutos · 4 passos</small></span></div><div class="m-step"><i>3</i><span>Cadastro no Mercado Livre Afiliados</span></div></div>
                   <div class="m-tabs"><span class="on"><i></i>Hoje</span><span><i></i>Plano</span><span><i></i>Modelos</span><span><i></i>Guias</span></div>
                 </div>
                 <div class="sc" data-s="1">
                   <div class="m-bar">‹ Voltar</div>
                   <span class="m-k">Semana 1 · Dia 1 · 40 minutos</span>
-                  <div class="m-h">Cadastro e Primeiro Link de Afiliado no Ar</div>
+                  <div class="m-h">Solicitação no Programa de Afiliados</div>
                   <div class="m-sec">Passos · <span id="dcount">0</span> de 3</div>
                   <div class="m-list">
-                    <div class="m-step" data-st><i>1</i><span>Abra o app da Shopee e entre no Programa de Afiliados com seu CPF.</span></div>
+                    <div class="m-step" data-st><i>1</i><span>Abra o app da Shopee e siga as instruções para solicitar participação no Programa de Afiliados.</span></div>
                     <div class="m-step" data-st><i>2</i><span>Escolha um produto com desconto real e gere o link em 1 clique.</span></div>
                     <div class="m-step" data-st><i>3</i><span>Salve o link no bloco de notas. Pronto: o Dia 1 fechou.</span></div>
                   </div>
@@ -528,10 +529,10 @@
                 <div class="sc" data-s="2">
                   <div class="m-bar">‹ Voltar</div>
                   <span class="m-k">Semana 1 · Dia 1</span>
-                  <div class="m-h">Cadastro e Primeiro Link de Afiliado no Ar</div>
+                  <div class="m-h">Solicitação no Programa de Afiliados</div>
                   <div class="m-done"><i></i><div><b>Dia 1 fechado</b><span>Volte amanhã para o próximo.</span></div></div>
                   <div class="m-sec">Depois vem</div>
-                  <div class="m-list"><div class="m-step"><i style="background:#0A66C2;border-color:#0A66C2;color:#fff">2</i><span>Abertura da Vitrine Silenciosa (Grupo ou Canal Anônimo)<br><small style="color:#86868F">40 minutos · comece amanhã</small></span></div></div>
+                  <div class="m-list"><div class="m-step"><i style="background:#0A66C2;border-color:#0A66C2;color:#fff">2</i><span>Abertura da Vitrine de Ofertas (Grupo ou Canal Anônimo)<br><small style="color:#86868F">40 minutos · comece amanhã</small></span></div></div>
                   <div class="m-stats" style="margin-top:12px"><div><b>1/21</b><span>dias fechados</span></div><div><b>5%</b><span>do plano</span></div><div><b>1</b><span>dia com você</span></div></div>
                 </div>
               <div class="tap" id="dtap"></div><div class="m-hand" id="dhand"></div></div>
@@ -600,7 +601,7 @@
         <div class="sec-h rv">
           <span class="kicker">Transparência Total</span>
           <h2>O Que Exatamente Você Vai Receber</h2>
-          <p>Nada de curso de 40 horas que você nunca assiste. Você recebe <strong>10 materiais em PDF e um app com o plano dia a dia</strong>, feitos para abrir no celular e executar em minutos.</p>
+          <p>Nada de curso de 40 horas que você nunca assiste. Você recebe <strong>9 materiais em PDF e um app com o plano dia a dia</strong>, feitos para abrir no celular e executar em minutos.</p>
         </div>
 
         <div class="kit">
@@ -616,13 +617,13 @@
         </div>
 
         <div class="grid3">
-          <div class="dv main rv" style="--i:0"><span class="bd">Manual Principal</span><h3>01. Plano Mestre de 7 Execuções Diárias</h3><p>O roteiro diário do Dia 1 ao Dia 7. Diz exatamente o que você faz em cada dia (40 min a 1h) até o seu primeiro link estar gerando cliques e comissões.</p><div class="ft"><span>PDF Passo a Passo</span><span class="inc">Incluso</span></div></div>
-          <div class="dv main rv" style="--i:1"><span class="bd">O Grande Motor</span><h3>02. Arsenal com 60 Modelos de Posts Prontos</h3><p>Textos persuasivos testados para Shopee e Mercado Livre. Divididos por gatilhos: queda de preço, cupom relâmpago e frete grátis. Você só troca o produto e posta.</p><div class="ft"><span>Copiar e Colar</span><span class="inc">Incluso</span></div></div>
-          <div class="dv rv" style="--i:2"><span class="bd">Privacidade & Profissionalismo</span><h3>03. Guia de Canal Discreto e Profissional (Sem Precisar Aparecer)</h3><p>Como criar e estruturar seu Canal oficial de promoções no WhatsApp e Telegram mantendo seu número pessoal privado. Você não precisa gravar vídeos, mostrar seu rosto ou usar seu perfil pessoal.</p><div class="ft"><span>Tutorial Blindado</span><span class="inc">Incluso</span></div></div>
-          <div class="dv rv" style="--i:0"><span class="bd">Audiência Gratuita</span><h3>04. Manual 'Do Zero aos 100 Membros'</h3><p>As 5 táticas orgânicas e permitidas para encher seu canal com pessoas com fome de compras, sem precisar de anúncios e sem incomodar conhecidos.</p><div class="ft"><span>Estratégia de Tração</span><span class="inc">Incluso</span></div></div>
-          <div class="dv rv" style="--i:1"><span class="bd">Multiplicador de Lucro</span><h3>05. Mapa de Categorias de Alta Comissão</h3><p>Descubra as categorias que chegam a 16% e 20% de comissão (Moda, Beleza e Utilidades) para bater o saque mínimo muito mais rápido.</p><div class="ft"><span>Tabela Estratégica</span><span class="inc">Incluso</span></div></div>
+          <div class="dv main rv" style="--i:0"><span class="bd">Manual Principal</span><h3>01. Plano Mestre de 7 Execuções Diárias</h3><p>O roteiro diário do Dia 1 ao Dia 7, com tarefas de aproximadamente 40 minutos a 1 hora para organizar seus canais, publicar ofertas e acompanhar os cliques. Comissões dependem de vendas atribuídas e validadas.</p><div class="ft"><span>PDF Passo a Passo</span><span class="inc">Incluso</span></div></div>
+          <div class="dv main rv" style="--i:1"><span class="bd">O Grande Motor</span><h3>02. Arsenal com 60 Modelos de Posts Prontos</h3><p>60 modelos de divulgação para adaptar à Shopee e ao Mercado Livre, organizados por situações como queda de preço, cupom e frete grátis. Confira as condições de cada oferta antes de publicar.</p><div class="ft"><span>Copiar e Colar</span><span class="inc">Incluso</span></div></div>
+          <div class="dv rv" style="--i:2"><span class="bd">Privacidade & Profissionalismo</span><h3>03. Guia de Canal Discreto e Profissional (Sem Precisar Aparecer)</h3><p>Como estruturar canais de ofertas no WhatsApp e Telegram sem usar seu perfil pessoal. As opções de privacidade disponíveis dependem do formato do canal e das configurações de cada aplicativo.</p><div class="ft"><span>Tutorial Blindado</span><span class="inc">Incluso</span></div></div>
+          <div class="dv rv" style="--i:0"><span class="bd">Audiência Gratuita</span><h3>04. Manual de Divulgação para Crescer seu Canal</h3><p>Orientações para divulgar seu canal de forma orgânica e buscar pessoas interessadas em ofertas, sem depender de anúncios pagos.</p><div class="ft"><span>Estratégia de Tração</span><span class="inc">Incluso</span></div></div>
+          <div class="dv rv" style="--i:1"><span class="bd">Multiplicador de Lucro</span><h3>05. Mapa de Categorias de Alta Comissão</h3><p>Consulte as categorias e faixas de comissão indicadas no material. As taxas podem variar conforme produto, campanha, regras e elegibilidade do programa.</p><div class="ft"><span>Tabela Estratégica</span><span class="inc">Incluso</span></div></div>
           <div class="dv rv" style="--i:2"><span class="bd bn">Super Bônus Incluso</span><h3>06. Acelerador de 14 Dias de Escala (Dias 8 ao 21)</h3><p>Um roteiro complementar para manter a publicação de ofertas, acompanhar os resultados e ajustar a rotina depois da primeira semana.</p><div class="ft"><span>Guia de Escala</span><span class="inc">Incluso</span></div></div>
-          <div class="dv rv" style="--i:0"><span class="bd bn">Super Bônus Incluso</span><h3>07. Calendário Editorial de 30 Dias</h3><p>Você nunca mais acorda sem saber o que postar. Um cronograma dia a dia com a semana da Black Friday e Natal mapeadas com precisão.</p><div class="ft"><span>Cronograma Pronto</span><span class="inc">Incluso</span></div></div>
+          <div class="dv rv" style="--i:0"><span class="bd bn">Super Bônus Incluso</span><h3>07. Calendário Editorial de 30 Dias</h3><p>Um cronograma com sugestões de publicação para organizar sua rotina, incluindo datas sazonais como Black Friday e Natal.</p><div class="ft"><span>Cronograma Pronto</span><span class="inc">Incluso</span></div></div>
           <div class="dv rv" style="--i:1"><span class="bd bn">Super Bônus Incluso</span><h3>08. Protocolo SOS de Destravamento (Dia 7)</h3><p>Chegou ao 7º dia e ainda não teve resultado? Um checklist de 4 perguntas para revisar sua escolha de ofertas, divulgação, links e acompanhamento.</p><div class="ft"><span>Checklist de Ajuste</span><span class="inc">Incluso</span></div></div>
           <div class="dv rv" style="--i:2"><span class="bd bn">Super Bônus Incluso</span><h3>09. Planilha de Controle de Lucros e Saques</h3><p>Acompanhe cliques, vendas aprovadas e previsões de saque da Shopee e Mercado Livre de forma simples pelo próprio celular.</p><div class="ft"><span>Planilha Mobile</span><span class="inc">Incluso</span></div></div>
         </div>
@@ -638,7 +639,7 @@
           <p>Veja as etapas do trabalho como afiliado — da escolha do produto ao acompanhamento das vendas e comissões.</p>
         </div>
         <div class="steps" id="steps">
-          <div class="stp rv" style="--i:0"><i>1</i><div><h4>Você pega uma oferta real</h4><p>Usando o aplicativo da Shopee ou Mercado Livre no celular, você escolhe produtos já desejados com desconto real e gera seu link de afiliado em 1 clique.</p></div></div>
+          <div class="stp rv" style="--i:0"><i>1</i><div><h4>Você pega uma oferta real</h4><p>Depois de aprovado no programa, você escolhe produtos com ofertas reais e usa o aplicativo da Shopee ou do Mercado Livre para gerar seu link de afiliado.</p></div></div>
           <div class="stp rv" style="--i:1"><i>2</i><div><h4>Copia um dos 60 modelos</h4><p>Você não perde tempo escrevendo. Escolhe um modelo pronto de texto do nosso arsenal, cola o link e publica no seu canal anônimo.</p></div></div>
           <div class="stp rv" style="--i:2"><i>3</i><div><h4>As pessoas compram na loja</h4><p>O comprador clica e faz o pedido direto na Shopee ou Mercado Livre. A loja empacota, envia a nota e entrega na casa dele.</p></div></div>
           <div class="stp rv" style="--i:3"><i>4</i><div><h4>Receba após a validação da venda</h4><p>Quando uma compra é atribuída ao seu link e validada conforme as regras do programa, a plataforma calcula a comissão. Prazos, valores mínimos e formas de saque variam conforme o programa e podem mudar.</p></div></div>
@@ -655,7 +656,7 @@
           <p>Uma tarefa simples por dia, cerca de 40 a 60 minutos. Se você não publicou, o dia não fechou:</p>
         </div>
         <div class="tl" id="tl">
-          <div class="ti rv"><div class="dot"><small>Dia</small>1</div><div class="bx"><h4>Cadastro Oficial e Primeiro Link no Ar</h4><p>Você segue o passo a passo para solicitar participação no programa de afiliados. A aprovação depende da plataforma; depois de aprovado, você poderá gerar seu primeiro link rastreável.</p></div></div>
+          <div class="ti rv"><div class="dot"><small>Dia</small>1</div><div class="bx"><h4>Solicitação no Programa e Primeiro Link</h4><p>Você segue o passo a passo para solicitar participação no programa de afiliados. A aprovação depende da plataforma; depois de aprovado, você poderá gerar seu primeiro link rastreável.</p></div></div>
           <div class="ti rv"><div class="dot"><small>Dia</small>2</div><div class="bx"><h4>Abertura da Sua Vitrine Silenciosa</h4><p>Configuração do Canal no WhatsApp ou Telegram com a bio perfeita, foto profissional e configuração de privacidade profissional para manter seu número e dados pessoais reservados.</p></div></div>
           <div class="ti rv"><div class="dot"><small>Dia</small>3</div><div class="bx"><h4>Ligação do Segundo Motor (Mercado Livre)</h4><p>Como ativar produtos com entrega rápida e comissões de até 16% no Mercado Livre para atender quem tem pressa de receber a encomenda.</p></div></div>
           <div class="ti rv"><div class="dot"><small>Dia</small>4</div><div class="bx"><h4>Publicação das 5 Primeiras Ofertas Quentes</h4><p>Você utiliza os modelos para publicar suas primeiras 5 ofertas, escolhendo produtos com atenção ao preço, desconto, categoria e comissão disponível.</p></div></div>
@@ -665,41 +666,12 @@
         </div>
         <div class="center rv">
           <a href="https://pay.cakto.com.br/kw79pwa_1252481" class="btn checkout-btn" onclick="trackCheckout()"><span>COMPRAR E ABRIR O DIA 1 — R$ 27,99</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <div class="pay"><div class="pay-row pay-best"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div><b>Cartão<span class="pay-tag">no checkout</span></b><span>No checkout seguro da Cakto, você preenche seus dados e confirma o pagamento. O tempo depende do método escolhido.</span></div></div><div class="pay-row pay-alt"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 10-10 10L2 12z"/></svg></div><div><b>Pix</b><span>Gera um código, você abre o app do banco, cola, confirma e volta. Funciona igual — só tem esse ida e volta.</span></div></div><div class="pay-foot">Antes disso você informa nome, e-mail, celular e CPF. Nos dois casos o acesso cai no seu e-mail na hora.</div></div>
+          
         </div>
       </div>
     </section>
 
-    <!-- EMPILHAMENTO DE VALOR -->
-    <section class="stack">
-      <div class="container">
-        <div class="sec-h rv">
-          <span class="kicker">Tudo incluído no acesso</span>
-          <h2>Veja os materiais que você vai receber</h2>
-          <p>Um conjunto de materiais práticos para organizar sua rotina de divulgação como afiliado.</p>
-        </div>
-        <div class="st-card rv">
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>01. Plano Mestre de Execução dos 7 Dias</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>02. Arsenal com 60 Modelos de Posts Prontos</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>03. Guia de Blindagem e Anonimato Total</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>04. Manual 'Do Zero aos 100 Membros Compradores'</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>05. Mapa de Categorias de Alta Comissão (Até 20%)</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>BÔNUS #1: Acelerador de 14 Dias de Escala (Dias 8 ao 21)</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>BÔNUS #2: Calendário Editorial Completo de 30 Dias</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>BÔNUS #3: Protocolo SOS de Destravamento de Vendas</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>BÔNUS #4: Planilha de Controle de Lucros no Celular</span><span class="v">INCLUSO</span></div>
-          <div class="st-row"><span class="nm"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>BÔNUS #5: Acesso Vitalício + Atualizações</span><span class="v">INCLUSO</span></div>
-          <div class="st-tot">
-            
-            <div class="bf">Oferta Especial Black Friday (Todos os 9 Materiais Inclusos):</div>
-            <div class="big"><small>R$</small>27<small>,99</small></div>
-            <div class="fine">Pagamento único · Sem assinaturas · Sem mensalidades escondidas<br><span style="opacity:.78">Preço total de <strong>R$ 27,99</strong>, com a taxa de serviço da plataforma já incluída.</span></div>
-            <a href="https://pay.cakto.com.br/kw79pwa_1252481" class="btn light checkout-btn" onclick="trackCheckout()"><span>COMPRAR POR R$ 27,99</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <div class="pay"><div class="pay-row pay-best"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div><b>Cartão<span class="pay-tag">no checkout</span></b><span>No checkout seguro da Cakto, você preenche seus dados e confirma o pagamento. O tempo depende do método escolhido.</span></div></div><div class="pay-row pay-alt"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 10-10 10L2 12z"/></svg></div><div><b>Pix</b><span>Gera um código, você abre o app do banco, cola, confirma e volta. Funciona igual — só tem esse ida e volta.</span></div></div><div class="pay-foot">Antes disso você informa nome, e-mail, celular e CPF. Nos dois casos o acesso cai no seu e-mail na hora.</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- GARANTIA -->
     <section>
@@ -726,9 +698,9 @@
           <details class="rv" open style="--i:0"><summary>Eu preciso aparecer ou gravar vídeos?<i></i></summary><div class="a"><strong>Não, absolutamente não.</strong> Você não precisa mostrar seu rosto nem gravar sua voz. O material ensina a estruturar canais de ofertas sem usar seu perfil pessoal; a privacidade do número depende do formato do canal e das configurações de cada aplicativo.</div></details>
           <details class="rv" style="--i:1"><summary>Serve para quem nunca vendeu nada na internet?<i></i></summary><div class="a">Sim. O material foi pensado para iniciantes e traz <strong>60 modelos de divulgação</strong> para adaptar. Você ainda precisará escolher ofertas, gerar seus links, publicar com consistência e acompanhar os resultados.</div></details>
           <details class="rv" style="--i:2"><summary>Preciso de computador ou só o celular?<i></i></summary><div class="a">Você só precisa do seu celular com acesso à internet. Todos os 10 materiais foram formatados em PDFs e modelos leves para serem lidos e executados direto pela tela do seu smartphone.</div></details>
-          <details class="rv" style="--i:3"><summary>Preciso gastar dinheiro com anúncios pagos?<i></i></summary><div class="a">Não. O método foi desenvolvido para tráfego 100% orgânico e gratuito através dos Canais. Você não precisa gastar nenhum real em anúncios no Facebook ou Instagram para começar a faturar.</div></details>
+          <details class="rv" style="--i:3"><summary>Preciso gastar dinheiro com anúncios pagos?<i></i></summary><div class="a">Não. O roteiro ensina estratégias de divulgação orgânica e não exige investimento em anúncios para ser executado. Isso não garante visitas, vendas ou comissões: os resultados dependem da divulgação e da resposta do público.</div></details>
           <details class="rv" style="--i:4"><summary>Preciso ter CNPJ para receber as comissões?<i></i></summary><div class="a">Não. Você pode se cadastrar como pessoa física usando seu CPF. Na Shopee, as comissões passam por validação e seguem os prazos, valores mínimos e procedimentos vigentes do programa. Consulte as regras oficiais antes de contar com um valor ou data de recebimento.</div></details>
-          <details class="rv" style="--i:5"><summary>Como e quando eu recebo o produto?<i></i></summary><div class="a">O acesso é <strong>imediato</strong>. Assim que seu pagamento for confirmado (no Pix a aprovação leva segundos), você recebe os dados de acesso no seu e-mail e no seu WhatsApp para baixar todos os arquivos imediatamente.</div></details>
+          <details class="rv" style="--i:5"><summary>Como e quando eu recebo o produto?<i></i></summary><div class="a">Após a confirmação do pagamento, o acesso é enviado pelos canais de entrega informados no checkout. O tempo de liberação pode variar conforme a confirmação do pagamento e o processamento da plataforma.</div></details>
           <details class="rv" style="--i:6"><summary>Tem mensalidade ou cobrança recorrente?<i></i></summary><div class="a">Não. O valor é pagamento único. No checkout aparece R$ 27,00 do material mais R$ 0,99 de taxa da plataforma — <strong>R$ 27,99 no total, cobrado uma única vez</strong>. Depois disso não existe mensalidade, renovação nem cobrança nova: o acesso a todos os materiais e bônus é vitalício.</div></details>
         </div>
       </div>
@@ -741,7 +713,7 @@
         <p class="rv" style="--i:1">A Black Friday acontece em 27 de novembro. Começar a organizar sua vitrine com antecedência permite preparar os canais, selecionar ofertas e planejar suas publicações. Os resultados dependem da execução e da resposta do público:</p>
         <div class="center rv" style="--i:2;margin-top:0">
           <a href="https://pay.cakto.com.br/kw79pwa_1252481" class="btn checkout-btn" onclick="trackCheckout()"><span>COMPRAR AGORA — R$ 27,99</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <div class="pay"><div class="pay-row pay-best"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div><b>Cartão<span class="pay-tag">no checkout</span></b><span>No checkout seguro da Cakto, você preenche seus dados e confirma o pagamento. O tempo depende do método escolhido.</span></div></div><div class="pay-row pay-alt"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l10 10-10 10L2 12z"/></svg></div><div><b>Pix</b><span>Gera um código, você abre o app do banco, cola, confirma e volta. Funciona igual — só tem esse ida e volta.</span></div></div><div class="pay-foot">Antes disso você informa nome, e-mail, celular e CPF. Nos dois casos o acesso cai no seu e-mail na hora.</div></div>
+          
           <div class="trust"><span>🔒 Pagamento 100% Criptografado e Seguro</span><span>·</span><span>⚡ Acesso Imediato</span></div>
         </div>
       </div>
@@ -829,7 +801,7 @@
     })();
     // 3. Barra fixa no celular + borda do cabeçalho
     (function(){var bar=document.getElementById('mobileStickyBar'),hdr=document.getElementById('hdr');
-      window.addEventListener('scroll',function(){var y=window.scrollY;bar.classList.toggle('visible',y>560);hdr.classList.toggle('tight',y>20);},{passive:true});})();
+      window.addEventListener('scroll',function(){var y=window.scrollY,sticky=y>560;bar.classList.toggle('visible',sticky);hdr.classList.toggle('tight',y>20);hdr.classList.toggle('checkout-stick-visible',sticky);},{passive:true});})();
     // 4. Modais legais
     function openLegalModal(id){var m=document.getElementById(id);if(m)m.classList.add('active');}
     function closeLegalModal(e,id){if(e&&e.target!==e.currentTarget&&!e.target.classList.contains('legal-modal-close'))return;var m=document.getElementById(id);if(m)m.classList.remove('active');}
