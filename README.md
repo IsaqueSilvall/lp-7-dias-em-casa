@@ -29,5 +29,10 @@ eventos de página, lead e início de checkout.
 vercel deploy --prod --yes
 ```
 
+## Checkout
+
+A pasta `checkout/` documenta a tela de pagamento da Cakto — estrutura,
+composição do preço e pontos de atrito.
+
 > Este repositório é só a página de vendas. O app de entrega, o conteúdo do
 > produto e as apostilas ficam em repositório privado separado.
