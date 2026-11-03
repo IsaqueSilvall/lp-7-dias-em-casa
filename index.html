@@ -453,7 +453,7 @@
 .simple-page{background:#fff;color:#17191d}
 .simple-wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
 .simple-hero{padding:76px 0 64px;background:linear-gradient(135deg,#f5f9ff 0%,#fff 58%,#f3f7fc 100%)}
-.simple-hero-grid{display:grid;grid-template-columns:1.05fr .8fr;gap:64px;align-items:center}
+.simple-hero-grid{display:grid;grid-template-columns:minmax(0,760px);gap:0;align-items:start}
 .simple-kicker{display:inline-block;color:#1767b2;font-size:11px;font-weight:800;letter-spacing:.14em}
 .simple-copy h1{font-size:clamp(38px,5.2vw,62px);line-height:1.02;letter-spacing:-.045em;margin:18px 0 18px;max-width:650px}
 .simple-copy h1 em{font-style:normal;color:#1767b2}
@@ -517,7 +517,8 @@
 @media(max-width:760px){
  .simple-wrap{width:min(100% - 32px,560px)}
  .simple-hero{padding:46px 0 42px}
- .simple-hero-grid,.simple-kit-grid,.simple-disclaimer-inner{grid-template-columns:1fr;gap:30px}
+ .simple-hero-grid{grid-template-columns:1fr;gap:0}
+ .simple-kit-grid,.simple-disclaimer-inner{grid-template-columns:1fr;gap:30px}
  .simple-copy h1{font-size:42px}
  .simple-lead{font-size:16px}
  .simple-preview{max-width:310px;transform:none}
@@ -574,11 +575,6 @@
           <a class="simple-btn checkout-btn" href="https://pay.cakto.com.br/kw79pwa_1252481" onclick="trackCheckout()">Quero acessar o guia <span>→</span></a>
           <small class="simple-safe">Checkout seguro pela Cakto · garantia de 7 dias</small>
         </div>
-      </div>
-      <div class="simple-preview">
-        <div class="simple-preview-label">UM EXEMPLO DO MATERIAL</div>
-        <img src="img/prova-modelos-1.png" alt="Página real do material com modelos de posts prontos" width="1140" height="1268">
-        <p>Modelos editáveis: você substitui produto, preço e link.</p>
       </div>
     </div>
   </section>
